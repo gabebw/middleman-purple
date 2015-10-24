@@ -1,0 +1,11 @@
+.about .content {
+  ul {
+    @extend %default-ul;
+    list-style-type: disc;
+    margin-bottom: $base-line-height;
+  }
+
+  h3 {
+    font: 500 1.5rem/3rem $base-font-family;
+  }
+}

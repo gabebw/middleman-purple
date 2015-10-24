@@ -1,0 +1,16 @@
+<% content_for :css do %>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:700|PT+Serif:400,400italic,700|Inconsolata:400" rel="stylesheet" type="text/css">
+<% end %>
+
+<% content_for :production_js do %>
+  <script type="text/javascript">
+    $(function(){
+      Analytics.trackBlogPostPageView("<%= current_page.url %>");
+    });
+  </script>
+<% end %>
+
+<% wrap_layout :layout do %>
+  <h1 class="title"><%= current_page.data["title"] %></h1>
+  <%= current_page.render(layout: false) %>
+<% end %>

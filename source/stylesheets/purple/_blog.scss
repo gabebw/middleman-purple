@@ -1,0 +1,13 @@
+.blog .content {
+  @include text;
+
+  font-family: "PT Serif", serif;
+
+  h1.title, h2, h3 {
+    font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  }
+
+  pre, code {
+    font-family: $purple-monospace-family;
+  }
+}

@@ -1,0 +1,22 @@
+<section class="archive">
+  <h2 class="archive--header">Articles</h2>
+  <% page_articles.each do |article| %>
+    <article class="archive--article">
+      <time class="archive--time">
+        <%= article.date.strftime("%b") %>
+        <span class="day-of-month">
+          <%= article.date.strftime(" %e,") %>
+        </span>
+        <%= article.date.strftime(" %Y") %>
+      </time>
+
+      <h3 class="archive--title">
+        <% if article.data[:url] %>
+          <%= link_to article.title, article.data[:url], class: "archive--title-link" %>
+        <% else %>
+          <%= link_to article.title, article.path, class: "archive--title-link" %>
+        <% end %>
+      </h3>
+    </article>
+  <% end %>
+</section>

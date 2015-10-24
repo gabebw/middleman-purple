@@ -1,0 +1,14 @@
+@include media($ipad-screen-down) {
+  .content {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+
+  .archive--time {
+    @include span-columns(3);
+
+    .day-of-month {
+      display: none;
+    }
+  }
+}

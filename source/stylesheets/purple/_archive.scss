@@ -1,0 +1,24 @@
+.archive--header {
+  font: $smaller-header-font;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.archive--article {
+  @include shift($archive-offset-columns);
+  @include span-columns($archive-total-columns);
+  clear: right;
+}
+
+.archive--time {
+  @include span-columns($archive-date-columns of $archive-total-columns);
+  color: #777;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.archive--title {
+  @include span-columns($archive-title-columns of $archive-total-columns);
+  font-size: 1rem;
+  padding-bottom: 10px;
+}

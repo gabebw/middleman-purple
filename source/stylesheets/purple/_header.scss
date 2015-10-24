@@ -1,0 +1,36 @@
+.header {
+  background-color: $majestic-purple;
+  margin-bottom: 50px;
+  padding: 20px;
+  text-align: center;
+}
+
+.header--heading {
+  font: $header-font;
+  margin: 1rem auto 2rem auto;
+}
+
+.header--subheading {
+  font: $smallest-header-font;
+  margin-bottom: 1rem;
+}
+
+.header--link {
+  color: white;
+}
+
+.header--link:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.header--icon-link, .header--icon-link:hover {
+  color: white;
+  padding-right: 15px;
+  text-decoration: none;
+}
+
+.subheader--link {
+  color: white;
+  text-decoration: none;
+}
